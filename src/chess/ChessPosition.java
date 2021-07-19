@@ -23,7 +23,8 @@ public class ChessPosition {
 	protected Position toPosition() {
 		return new Position(8 - row, column -'a');
 	}
-	
+	//**Aqui agora você faz um casting com o char para a manipular os caracteres e convertêlos de posição de matriz para posição**//
+	//**do xadrez**//
 	protected static ChessPosition fromPosition(Position position) {
 		return new ChessPosition((char)('a' - position.getColumn()), 8 - position.getRow());
 	}
